@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "40c5fd7b-679d-452e-a2dc-95fbef7a7ea3",
+		"name": "API Q1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listUsers",
+			"id": "e28621b4-976e-4bd4-bdc2-2a525d46b07d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}api/users?page=2",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"id": "a2e3f6ba-fe19-4071-87d9-4b21879269d0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Abubakar\",\r\n    \"job\": \"Tushab\"\r\n}"
+				},
+				"url": "{{baseUrl}}api/users"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "092c55da-a231-4148-924b-2e42a569705b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Willaims\",\r\n    \"job\": \"Tushab\"\r\n}"
+				},
+				"url": "{{baseUrl}}api/users/2"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "55c65a8e-cd2c-4bbf-8818-f22966933b58",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
